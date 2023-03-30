@@ -1,1 +1,1 @@
-homzi bombzi
+Sklep z odzieża zimową
