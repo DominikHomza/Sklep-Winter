@@ -1,0 +1,11 @@
+internetowy sklep odzież zimowa
+1. Tworzymy logo wektorowe i animacje swojego sklepu nazwa ma byc polaczona z nazwiskiem   dolaczyc w oryginalnym rozszerzeniu logo i animacje✔
+2. 10 egzemplarzy danego towaru pod nim zdjecie, opis i cena✔
+3. Umozliwiamy zakup towarow uzytkownik podaje ilosc a my podajemy cene(fakture (pamietaj o opodatkowaniu cena netto cena brutto 23%(Koszty transportu)))✔-połowcznie brak oblicznia ceny brutto
+4. Powinno byc cos czego juz nie ma a kiedys bylo
+5.Zakladka administratora haslo nazwisko tam ma byc wszytsko czego dotyczy baza :
+rekordy, aktualizacje
+6. Stopka data ostatniej modyfikacji i nazwa autora✔
+7. elementy dodatkowe strony (windows time i data)
+ma byc latwa w obsludze
+https://mansfeld.pl/programowanie/rejestracja-logowanie-w-php-mysql/

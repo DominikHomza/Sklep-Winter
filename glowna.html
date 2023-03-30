@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Koszyk</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./js.js"></script>
+</head>
+
+<body>
+  <div id="strona">
+    <center>
+      <img src="img/logo-ani.gif" alt="Logo" width="50%">
+    </center>
+    <div align="center">
+      <ul id="nawigacja">
+        <li><a href="glowna.html" class="on">Strona główna</a></li>
+        <li><a href="php.php">Administrator</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="bod">
+    <table>
+      <tr>
+        <div align="center">
+          <h1>ODZIEŻ ZIMOWA</h1>
+          <td>
+            <div id="zjecia">
+              <img src="img/czapka.jpg" alt="Czapka zimowa" width="100%" border="2">
+              <br>Czapka zimowa cena: 50 zł
+              <button onclick="dodajDoKoszyka('Czapka zimowa', 50, 1)" class="btn-dodaj">Dodaj do koszyka</button>
+          </td>
+        </div>
+        <td>
+          <div id="zjecia">
+            <img src="img/szalik.jpg" alt="Szalik" width="100%" border="2">
+            <br>Szalik cena: 35 zł
+            <button onclick="dodajDoKoszyka('Szalik', 35, 1)" class="btn-dodaj">Dodaj do koszyka</button>
+        </td>
+  </div>
+  <td>
+    <div id="zjecia">
+      <img src="img/kurtka.jpg" width="60%" alt="Kurtka zimowa" border="2">
+      <br>Kurtka zimowa cena: 200 zł
+      <button onclick="dodajDoKoszyka('Kurtka zimowa', 200, 1)" class="btn-dodaj">Dodaj do koszyka</button>
+  </td>
+  </tr>
+  </div>
+  <tr>
+    <td>
+      <div id="zjecia">
+        <img src="img/skarpetki.jpg" width="100%" alt="Skarpetki zimowe" border="2">
+        <br>Skarpetki zimowe cena: 40 zł
+        <button onclick="dodajDoKoszyka('Skarpetki zimowe', 40, 1)" class="btn-dodaj">Dodaj do koszyka</button>
+    </td>
+    </div>
+    <td>
+      <div id="zjecia">
+        <img src="img/spodnie.jpg" width="100%" alt="Spodnie" border="2">
+        <br>Spodnie cena: 100 zł
+        <button onclick="dodajDoKoszyka('Spodnie', 100, 1)" class="btn-dodaj">Dodaj do koszyka</button>
+    </td>
+    </div>
+    <td>
+      <div id="zjecia">
+        <img src="img/Buty-zimowe.jpg" width="100%" alt="Buty zimowe" border="2">
+        <br>Buty zimowe cena: 150 zł
+        <button onclick="dodajDoKoszyka('Buty zimowe', 150, 1)" class="btn-dodaj">Dodaj do koszyka</button>
+    </td>
+  </tr>
+  </div>
+  <tr>
+    <td>
+      <div id="zjecia">
+        <img src="img/bluza.jpg" width="100%" alt="bluza" border="2">
+        <br>Bluza cena: 140 zł
+        <button onclick="dodajDoKoszyka('Bluza', 140, 1)" class="btn-dodaj">Dodaj do koszyka</button>
+    </td>
+    </div>
+    <td>
+      <div id="zjecia">
+        <img src="img/rekawiczki.jpg" width="100%" alt="Rękawiczki" border="2">
+        <br>Rękawiczki cena: 60 zł
+        <button onclick="dodajDoKoszyka('Rękawiczki', 60, 1)" class="btn-dodaj">Dodaj do koszyka</button>
+    </td>
+    </div>
+    <td>
+      <div id="zjecia">
+        <img src="img/kamizelka.jpg" width="60%" alt="Kamizelka" border="2">
+        <br>Kamizelka cena: 100 zł
+        <button onclick="dodajDoKoszyka('Kamizelka', 100, 1)" class="btn-dodaj">Dodaj do koszyka</button>
+    </td>
+  </tr>
+  </div>
+  <tr>
+    <td>
+      <div id="zjecia">
+        <img src="img/kombinezon.jpg" width="60%" alt="Kombinezon" border="2">
+        <br>Kombinezon cena: 120 zł
+        <button onclick="dodajDoKoszyka('Kombinezon', 120, 1)" class="btn-dodaj">Dodaj do koszyka</button>
+    </td>
+    <td>
+      <div id="zjecia">
+        <img src="img/kominiarka.jpg" width="100%" alt="Kominiarka" border="2">
+        <br>Kominiarka cena: 20 zł
+        <button onclick="dodajDoKoszyka('Kominiarka', 20, 1)" class="btn-dodaj">Dodaj do koszyka</button>
+    </td>
+    <td>
+      <div id="zjecia">
+        <img src="img/ocieplacz.jpg" width="60%" alt="Ocieplacz" border="2">
+        <br>Ocieplacz cena: 120 zł
+        <button onclick="dodajDoKoszyka('Ocieplacz', 120, 1)" class="btn-dodaj">Dodaj do koszyka</button>
+    </td>
+  </tr>
+  </table>
+  </div>
+  </div>
+  </div>
+  <div id="koszyk">
+    <h3>Koszyk:</h3>
+    <div id="koszyk">
+      <table id="koszyk-table">
+        <thead>
+          <tr>
+            <th>Nazwa</th>
+            <th>Cena</th>
+            <th>Ilość</th>
+            <th>Razem</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="koszyk-row" style="display: none">
+            <td class="nazwa"></td>
+            <td class="cena"></td>
+            <td class="ilosc"></td>
+            <td class="razem"></td>
+          </tr>
+        </tbody>
+      </table>
+      <p id="brak-produktow" style="display: none">Brak produktów w koszyku</p>
+    </div>
+    <div id="suma">
+      <h4>Suma:</h4>
+      <div>
+        <p id="suma-koszyka">0 zł</p>
+      </div>
+    </div><button onclick="zaplac()" class="btn-dodaj">Zapłać</button>
+    <ul id="nawigacja">
+      <script>
+
+        document.write("Data ostatniej modyfikacji " + document.lastModified);
+      </script>
+      <p>
+
+        <li>Autor:Dominik Homza </li>
+    </ul>
+    </p>
+</body>
+
+</html>

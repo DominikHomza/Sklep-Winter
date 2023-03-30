@@ -1,0 +1,92 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.15em;
+    background-color: #00d9ff;
+  }
+  
+  #strona {
+    max-width: 940px;
+    min-width:720px;
+    margin: 0 auto;
+  }
+  
+  #nawigacja {
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(139, 139, 139);
+  }
+  
+  #nawigacja li {
+    float: left;
+  }
+  
+  #nawigacja li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  #nawigacja li a:hover {
+    background-color: #111;
+  }
+  
+  .on {
+    background-color: #4CAF50;
+  }
+  
+  #bod {
+    max-width: 940px;
+    min-width:720px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+  }
+  
+  td {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .btn-dodaj {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  #zjecia {
+    text-align: center;
+    padding: 10px;
+  }
+  
